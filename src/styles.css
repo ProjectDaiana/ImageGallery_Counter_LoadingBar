@@ -1,0 +1,112 @@
+body {
+  background-color: #ffe278;
+  color: #333300;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: "degular", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.logo {
+  height: 14vh;
+  width: auto;
+  object-fit: scale-down;
+  margin-left: 0;
+  position: fixed;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.menu {
+  margin-top: 104px;
+  margin-left: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+  margin: 8 16px;
+  line-height: 0.8;
+}
+
+h2 {
+  font-weight: 400;
+  bottom: 0;
+  position: fixed;
+  font-size: 18px;
+  margin: 8 16px;
+  line-height: 1.4;
+}
+
+figcaption {
+  font-weight: 800;
+  color: white;
+  font-size: 18px;
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+  bottom: 16px;
+  margin: 8 auto;
+  width: 75%;
+}
+
+img {
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  width: 70%;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Center align its children horizontally */
+  align-items: center;
+}
+
+aside {
+  height: 100%;
+  width: 100%;
+  position : absolute;
+  background: white;
+  display: flex; 
+  z-index: 2;
+  align-items: center;
+  justify-content: center:
+}
+
+.loading-bar {
+  display: grid;
+  grid-row-gap: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+progress {
+  border: 1px solid black;
+  height: 20px;
+  width: 400px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background: #ffe278;
+}
+
+progress[value]::-webkit-progress-value {
+  background: black;
+}
